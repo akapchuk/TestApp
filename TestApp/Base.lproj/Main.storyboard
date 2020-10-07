@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnO-li-IBF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="76"/>
+            <point key="canvasLocation" x="922" y="76"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="STE-gW-LZL">
@@ -232,7 +232,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-Ct-J2D">
                                 <rect key="frame" x="157" y="47" width="100" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" red="0.85684298652077684" green="0.58136952376652629" blue="0.52799979907370331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.63370134151654023" green="0.85684298652077684" blue="0.62114684771375883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="891376" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-G0-F4Q">
@@ -309,13 +309,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhK-6i-IA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608.6956521739132" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1686" y="76"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jbq-fA-BJW"/>
         <segue reference="yMG-ic-Rvm"/>
-        <segue reference="wlo-vY-h11"/>
+        <segue reference="hIe-IQ-A48"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="891372" width="512.00701904296875" height="512.00701904296875"/>
