@@ -30,7 +30,7 @@ class SignViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Повторить", style: UIAlertAction.Style.default, handler: nil))
         alertController.addAction(UIAlertAction(title: "Понятно", style: UIAlertAction.Style.default, handler: nil))
         
-        // Задаю всплывающее окно для проверки совпадения паролей
+        // Задаю всплывающее окно для проверки совпадения двух паролей
         let alertControllerPassEquals = UIAlertController(
             title: "Пароли не совпадают",
             message: "Повторите попытку",
