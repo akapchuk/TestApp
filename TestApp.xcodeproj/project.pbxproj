@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11216F452533660700C297A4 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11216F442533660700C297A4 /* LogViewController.swift */; };
+		11216F482533664100C297A4 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11216F472533664100C297A4 /* SignViewController.swift */; };
+		1151C24F25336B1C00183E00 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151C24E25336B1C00183E00 /* GreetingViewController.swift */; };
 		11DF8C07252DA7EE002D2946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C06252DA7EE002D2946 /* AppDelegate.swift */; };
 		11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */; };
 		11DF8C0B252DA7EE002D2946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C0A252DA7EE002D2946 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11216F442533660700C297A4 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		11216F472533664100C297A4 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		1151C24E25336B1C00183E00 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		11DF8C03252DA7EE002D2946 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DF8C06252DA7EE002D2946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				11DF8C0F252DA7F2002D2946 /* Assets.xcassets */,
 				11DF8C11252DA7F2002D2946 /* LaunchScreen.storyboard */,
 				11DF8C14252DA7F2002D2946 /* Info.plist */,
+				11216F442533660700C297A4 /* LogViewController.swift */,
+				11216F472533664100C297A4 /* SignViewController.swift */,
+				1151C24E25336B1C00183E00 /* GreetingViewController.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DF8C0B252DA7EE002D2946 /* ViewController.swift in Sources */,
+				1151C24F25336B1C00183E00 /* GreetingViewController.swift in Sources */,
 				11DF8C07252DA7EE002D2946 /* AppDelegate.swift in Sources */,
+				11216F482533664100C297A4 /* SignViewController.swift in Sources */,
 				11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */,
+				11216F452533660700C297A4 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
