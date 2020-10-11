@@ -43,14 +43,21 @@ class SignViewController: UIViewController {
         
         
         // Условия проверки пароля
-        if createLoginField.text!.count < 7 {
+        // Наличие в пароле не менее 7 символов
+        if createPasswordTextField.text!.count < 7 {
             self.present(alertController, animated: true, completion: nil)
-        } else if createLoginField.text == createLoginField.text?.uppercased()
-               || createLoginField.text == createLoginField.text?.lowercased() {
+            
+        // Наличие в пароле хотя бы одной буквы верхнего и нижнего регистра
+        } else if createPasswordTextField.text == createPasswordTextField.text!.uppercased()
+               || repeatPasswordTextField.text == createPasswordTextField.text!.lowercased() {
             self.present(alertController, animated: true, completion: nil)
-        } else if createLoginField.text != repeatPasswordTextField.text {
+            
+        // Условие совпадения паролей
+        } else if createPasswordTextField.text != repeatPasswordTextField.text {
             self.present(alertControllerPassEquals, animated: true, completion: nil)
         } else {
+            
+        // NavigationaController на следующую страницу
             let buttonSignUp = storyboard?.instantiateViewController(withIdentifier: "GreetingViewController") as! GreetingViewController
             let text = createLoginField.text
             buttonSignUp.textFromCreatedLogin = text

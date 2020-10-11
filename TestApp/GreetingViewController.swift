@@ -15,9 +15,11 @@ class GreetingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Передаем в заголовок имя пользователя
         title = textFromCreatedLogin
+        // Передаем в лейбл имя пользователя
         createdLogin.text = "Hello, \(textFromCreatedLogin!)"
-
     }
 
     @IBAction func goToroot(_ sender: UIButton) {
