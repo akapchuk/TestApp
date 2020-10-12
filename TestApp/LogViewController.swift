@@ -13,6 +13,8 @@ class LogViewController: UIViewController {
         super.viewDidLoad()
     }
     
+
+    
     @IBAction func buttonClickHere(_ sender: UIButton) {
         let signUpPageVC = storyboard?.instantiateViewController(withIdentifier: "SignViewController") as! SignViewController
         navigationController?.pushViewController(signUpPageVC, animated: true)
