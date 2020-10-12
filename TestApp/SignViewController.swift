@@ -49,7 +49,8 @@ class SignViewController: UIViewController {
             
         // Наличие в пароле хотя бы одной буквы верхнего и нижнего регистра
         } else if createPasswordTextField.text == createPasswordTextField.text!.uppercased()
-               || repeatPasswordTextField.text == createPasswordTextField.text!.lowercased() {
+               || repeatPasswordTextField.text == createPasswordTextField.text!.lowercased()
+        {
             self.present(alertController, animated: true, completion: nil)
             
         // Условие совпадения паролей
