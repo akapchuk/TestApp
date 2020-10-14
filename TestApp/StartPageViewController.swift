@@ -24,7 +24,7 @@ class StartPageViewController: UIViewController {
     
     
     @IBAction func pushSignUpButton(_ sender: UIButton) {
-        let signUpView = ProfileViewController(nibName: "LoginPageViewController", bundle: nil)
+        let signUpView = ProfileViewController(nibName: "SignUpPageViewController", bundle: nil)
         present(signUpView, animated: true, completion: nil)
     }
 }

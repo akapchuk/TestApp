@@ -8,9 +8,11 @@
 import UIKit
 
 class SignUpPageViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
-        
+
+
 }
