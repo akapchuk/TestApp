@@ -18,6 +18,8 @@
 		1151C24F25336B1C00183E00 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151C24E25336B1C00183E00 /* GreetingViewController.swift */; };
 		117918C62534D068009115D9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117918C42534D068009115D9 /* ProfileViewController.swift */; };
 		117918C72534D068009115D9 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117918C52534D068009115D9 /* ProfileViewController.xib */; };
+		11B13E1F25387B34002AEDB5 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */; };
+		11B13E2025387B34002AEDB5 /* WelcomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */; };
 		11DF8C07252DA7EE002D2946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C06252DA7EE002D2946 /* AppDelegate.swift */; };
 		11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */; };
 		11DF8C0B252DA7EE002D2946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C0A252DA7EE002D2946 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		1151C24E25336B1C00183E00 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		117918C42534D068009115D9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		117918C52534D068009115D9 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomePageViewController.xib; sourceTree = "<group>"; };
 		11DF8C03252DA7EE002D2946 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DF8C06252DA7EE002D2946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				110374D32536E4E100392992 /* LoginPageViewController.xib */,
 				11401DF32537151100B87183 /* SignUpPageViewController.swift */,
 				11401DF42537151100B87183 /* SignUpPageViewController.xib */,
+				11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */,
+				11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */,
 				11401DE425370DB500B87183 /* ----------------.swift */,
 				11DF8C11252DA7F2002D2946 /* LaunchScreen.storyboard */,
 				11DF8C14252DA7F2002D2946 /* Info.plist */,
@@ -159,6 +165,7 @@
 			files = (
 				11DF8C13252DA7F2002D2946 /* LaunchScreen.storyboard in Resources */,
 				11DF8C10252DA7F2002D2946 /* Assets.xcassets in Resources */,
+				11B13E2025387B34002AEDB5 /* WelcomePageViewController.xib in Resources */,
 				117918C72534D068009115D9 /* ProfileViewController.xib in Resources */,
 				11DF8C0E252DA7EE002D2946 /* Main.storyboard in Resources */,
 				110374D52536E4E200392992 /* LoginPageViewController.xib in Resources */,
@@ -183,6 +190,7 @@
 				117918C62534D068009115D9 /* ProfileViewController.swift in Sources */,
 				11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */,
 				11401DF52537151100B87183 /* SignUpPageViewController.swift in Sources */,
+				11B13E1F25387B34002AEDB5 /* WelcomePageViewController.swift in Sources */,
 				11216F452533660700C297A4 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
