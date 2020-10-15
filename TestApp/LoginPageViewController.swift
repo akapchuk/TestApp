@@ -13,10 +13,11 @@ class LoginPageViewController: UIViewController {
         super.viewDidLoad()
 
     }
+
     
     @IBAction func pushClickHereButton(_ sender: UIButton) {
-        let clickHereButton = ProfileViewController(nibName: "SignUpPageViewController", bundle: nil)
-        present(clickHereButton, animated: true, completion: nil)
+        let signUpPage = SignUpPageViewController(nibName: nil, bundle: nil)
+        present(signUpPage, animated: true, completion: nil)
     }
     
 }
