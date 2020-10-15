@@ -7,7 +7,24 @@
 
 import UIKit
 
+
+
+
+
 class SignUpPageViewController: UIViewController {
+    
+    
+    // xib на весь экран
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        modalPresentationStyle = .fullScreen
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     
     // Инициализация текстовых полей
     @IBOutlet weak var enterLoginTextField: UITextField!
@@ -17,7 +34,6 @@ class SignUpPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     // Кнопка-переход на страницу Login
@@ -43,6 +59,8 @@ class SignUpPageViewController: UIViewController {
         alertMessageDifferentPasswords.addAction(UIAlertAction(title: "Повторить", style: UIAlertAction.Style.default, handler: nil))
         alertMessageDifferentPasswords.addAction(UIAlertAction(title: "Отмена", style: UIAlertAction.Style.default, handler: nil))
         
+        // С помощью функции создать alert и вводить аргументы в зависимости от того, какое уведомление мне нужно (или класс + enum с набором ошибок)
+        
         // Требования к паролю
         if createPasswordTextField.text!.count < 7 {
             self.present(alertMessage, animated: true, completion: nil)
@@ -57,6 +75,7 @@ class SignUpPageViewController: UIViewController {
             
         // Переход на следующий Xib
         } else {
+            
             let welcomePage = WelcomePageViewController(nibName: "WelcomePageViewController", bundle: nil)
             self.present(welcomePage, animated: true, completion: nil)
         }

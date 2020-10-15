@@ -93,7 +93,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hbf-pz-maE" secondAttribute="trailing" constant="20" id="vWO-eb-7qF"/>
                 <constraint firstItem="0vP-Iy-BgC" firstAttribute="top" secondItem="Mh4-mM-7Cf" secondAttribute="bottom" constant="25" id="xCK-Gj-6II"/>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="139" y="92"/>
         </view>
     </objects>

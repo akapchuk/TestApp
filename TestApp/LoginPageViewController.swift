@@ -8,6 +8,16 @@
 import UIKit
 
 class LoginPageViewController: UIViewController {
+    
+    // xib на весь экран
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        modalPresentationStyle = .fullScreen
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +26,16 @@ class LoginPageViewController: UIViewController {
 
     
     @IBAction func pushClickHereButton(_ sender: UIButton) {
-        let signUpPage = SignUpPageViewController(nibName: "SignUpPageViewController", bundle: nil)
-        self.present(signUpPage, animated: true, completion: nil)
+        
+        // Не инициализировать зановго Sign Up, а вернуть
+//        if parent is SignUpPageViewController {
+//            dismiss(animated: true, completion: nil)
+//        }
+        dismiss(animated: true, completion: nil)
+        
+//        let signUpPage = SignUpPageViewController(nibName: "SignUpPageViewController", bundle: nil)
+//        self.present(signUpPage, animated: true, completion: nil)
     }
+    
     
 }
