@@ -16,8 +16,8 @@ class LoginPageViewController: UIViewController {
 
     
     @IBAction func pushClickHereButton(_ sender: UIButton) {
-        let signUpPage = SignUpPageViewController(nibName: nil, bundle: nil)
-        present(signUpPage, animated: true, completion: nil)
+        let signUpPage = SignUpPageViewController(nibName: "SignUpPageViewController", bundle: nil)
+        self.present(signUpPage, animated: true, completion: nil)
     }
     
 }
