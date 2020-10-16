@@ -16,7 +16,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // тут начал писать
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // Иницииализируем window (контейнер, в котором будет лежать весь наш UI).
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = CustomViewController()
+        window?.makeKeyAndVisible()
+        
+        /*
+        // Инициализируем storyboard и задаем ему имя
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Инициализируем view controller из сториборда с идентификатором StratPa..
+        let rootVC = storyboard.instantiateViewController(withIdentifier: "StartPageViewController")
+        
+        // Просто кодом - ОТДЕЛЬНЫЙ СПОСОБ
+        let rootThreeVC = CustomViewController()
+        rootThreeVC.view.backgroundColor = .systemPink
+        
+        window?.rootViewController = rootVC
+        
+        
+        // Чтобы виндоу стал ключевым и видимым. Таковым может быть один виндоу
+        window?.makeKeyAndVisible()
+        
+        // Проверка, ключевое ли окно (виндоу)
+        window?.isKeyWindow
+        
+        
+        // Этот объект и есть наше приложение
+        UIApplication.shared
+        
+        //Этот объект непосредственно наш экран
+        UIScreen.main.bounds
+        
+        let rootTwoVc = WelcomePageViewController(nibName: nil, bundle: nil)
+        
+ */
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

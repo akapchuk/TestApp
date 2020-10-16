@@ -27,11 +27,13 @@ class LoginPageViewController: UIViewController {
     
     @IBAction func pushClickHereButton(_ sender: UIButton) {
         
-        // Не инициализировать зановго Sign Up, а вернуть
-//        if parent is SignUpPageViewController {
-//            dismiss(animated: true, completion: nil)
-//        }
-        dismiss(animated: true, completion: nil)
+// Не инициализировать зановго Sign Up, а вернуть
+        if presentingViewController is SignUpPageViewController {
+            dismiss(animated: true, completion: nil)
+        } else if presentingViewController is StartPageViewController {
+            let signUpPage = SignUpPageViewController(nibName: "SignUpPageViewController", bundle: nil)
+            self.present(signUpPage, animated: true, completion: nil)
+        }
         
 //        let signUpPage = SignUpPageViewController(nibName: "SignUpPageViewController", bundle: nil)
 //        self.present(signUpPage, animated: true, completion: nil)
