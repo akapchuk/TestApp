@@ -60,3 +60,31 @@ class CustomButton: UIButton {
     }
     
 }
+
+/*
+ override func viewDidLoad() {
+     super.viewDidLoad()
+     setupButtomConstraints()
+     addActionToButton()
+     customButton.setTitle("Login", for: .normal)
+ }
+ 
+ func setupButtomConstraints() {
+     view.addSubview(customButton)
+     customButton.translatesAutoresizingMaskIntoConstraints = false
+     customButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+     customButton.widthAnchor.constraint(equalToConstant: 280).isActive = true
+     customButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+     customButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 200).isActive = true
+ }
+ 
+ func addActionToButton() {
+     customButton.addTarget(self, action: #selector(customButtonTapped), for: .touchUpInside)
+ }
+ 
+ @objc func customButtonTapped() {
+     customButton.shakeButton()
+ }
+}
+
+ */

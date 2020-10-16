@@ -10,8 +10,6 @@ import UIKit
 
 class CustomViewController: UIViewController {
     
-    var customButton = CustomButton()
-    
     override func loadView() {
         // xib файлы добавляем сюда
         super.loadView()
@@ -43,49 +41,28 @@ class CustomViewController: UIViewController {
         // Кнопка
         let loginButton = UIButton()
         view.addSubview(loginButton)
-        loginButton.backgroundColor = .red
         
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        loginButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        // Внешний вид кнопки
         loginButton.setTitle("Login", for: .normal)
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 18)
         loginButton.layer.cornerRadius = 8
         loginButton.layer.borderWidth = 3.0
         loginButton.layer.borderColor = UIColor.darkGray.cgColor
+        loginButton.backgroundColor = .red
         
-        
+        // Констрейнты для кнопки
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
-    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
     
    
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupButtomConstraints()
-        addActionToButton()
-        customButton.setTitle("Login", for: .normal)
-    }
-    
-    func setupButtomConstraints() {
-        view.addSubview(customButton)
-        customButton.translatesAutoresizingMaskIntoConstraints = false
-        customButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        customButton.widthAnchor.constraint(equalToConstant: 280).isActive = true
-        customButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        customButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 200).isActive = true
-    }
-    
-    func addActionToButton() {
-        customButton.addTarget(self, action: #selector(customButtonTapped), for: .touchUpInside)
-    }
-    
-    @objc func customButtonTapped() {
-        customButton.shakeButton()
-    }
-}
