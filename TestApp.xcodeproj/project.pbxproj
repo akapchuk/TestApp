@@ -65,7 +65,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11A848162538A88D001394C3 /* HW Xib */ = {
+		11A848162538A88D001394C3 /* HW Xib (11) */ = {
 			isa = PBXGroup;
 			children = (
 				110374D72536E8C200392992 /* StartPageViewController.swift */,
@@ -76,10 +76,10 @@
 				11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */,
 				11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */,
 			);
-			path = "HW Xib";
+			path = "HW Xib (11)";
 			sourceTree = "<group>";
 		};
-		11A848182538A8CF001394C3 /* HW Stryboards */ = {
+		11A848182538A8CF001394C3 /* HW Stryboards (10) */ = {
 			isa = PBXGroup;
 			children = (
 				11216F442533660700C297A4 /* LogViewController.swift */,
@@ -88,14 +88,22 @@
 				11216F472533664100C297A4 /* SignViewController.swift */,
 				1151C24E25336B1C00183E00 /* GreetingViewController.swift */,
 			);
-			path = "HW Stryboards";
+			path = "HW Stryboards (10)";
+			sourceTree = "<group>";
+		};
+		11D7B4CE2539FCF900A5582F /* HW View Controller (12)  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "HW View Controller (12) ";
 			sourceTree = "<group>";
 		};
 		11DF8BFA252DA7EE002D2946 = {
 			isa = PBXGroup;
 			children = (
-				11A848182538A8CF001394C3 /* HW Stryboards */,
-				11A848162538A88D001394C3 /* HW Xib */,
+				11A848182538A8CF001394C3 /* HW Stryboards (10) */,
+				11A848162538A88D001394C3 /* HW Xib (11) */,
+				11D7B4CE2539FCF900A5582F /* HW View Controller (12)  */,
 				11DF8C05252DA7EE002D2946 /* TestApp */,
 				11DF8C04252DA7EE002D2946 /* Products */,
 			);
