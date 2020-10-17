@@ -25,7 +25,7 @@ class CustomViewController: UIViewController {
         view.addSubview(greetingLabel)
         greetingLabel.text = "Hello you!"
         
-        // Внешний вид Label
+        // Внешний вид Label Greeting
         greetingLabel.textAlignment = .center
         greetingLabel.textColor = .white
         greetingLabel.backgroundColor = .systemBlue
@@ -34,7 +34,7 @@ class CustomViewController: UIViewController {
         greetingLabel.layer.cornerRadius = 8
         greetingLabel.clipsToBounds = true
         
-        // Констрейнты для Label
+        // Констрейнты для Label Greeting
         greetingLabel.translatesAutoresizingMaskIntoConstraints = false
         greetingLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
 //        greetingLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -54,7 +54,8 @@ class CustomViewController: UIViewController {
         // Констрейнты для Label - Login
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         loginLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         loginLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -460).isActive = true
 
         //----------------------LOGIN TEXT FIELD-----------------
@@ -75,7 +76,7 @@ class CustomViewController: UIViewController {
         loginTextField.translatesAutoresizingMaskIntoConstraints = false
         loginTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
         loginTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        loginTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginTextField.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         loginTextField.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400).isActive = true
         
         //-----------------------LABEL PASSWORD--------------
@@ -91,7 +92,7 @@ class CustomViewController: UIViewController {
         // Констрейнты для Label - Login
         passwordLabel.translatesAutoresizingMaskIntoConstraints = false
         passwordLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        passwordLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        passwordLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         passwordLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -350).isActive = true
         
         //---------------------PASSWORD TEXT FIELD------------
@@ -102,6 +103,7 @@ class CustomViewController: UIViewController {
         passwordTextField.autocapitalizationType = .words
         passwordTextField.autocorrectionType = .yes
         passwordTextField.clipsToBounds = true
+        passwordTextField.backgroundColor = .white
         passwordTextField.layer.cornerRadius = 8
         passwordTextField.layer.borderWidth  = 1.5
         passwordTextField.layer.borderColor  = UIColor.lightGray.cgColor
@@ -111,7 +113,7 @@ class CustomViewController: UIViewController {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        passwordTextField.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         passwordTextField.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -290).isActive = true
         
         //---------------------BUTTON LOGIN---------------
