@@ -3,6 +3,7 @@
 //  Created by Саша Капчук on 10/15/20.
 
 import UIKit
+import Foundation
 
 class CustomViewController: UIViewController {
     
@@ -21,6 +22,8 @@ class CustomViewController: UIViewController {
         view.backgroundColor = .systemIndigo
         
         
+        //-----LABEL GREETING-----
+        
         // MARK: Label Greeting
         view.addSubview(greetingLabel)
         greetingLabel.text = "Hello you!"
@@ -33,21 +36,30 @@ class CustomViewController: UIViewController {
         greetingLabel.numberOfLines = 2
         greetingLabel.layer.cornerRadius = 8
         greetingLabel.clipsToBounds = true
+        greetingLabel.layer.cornerRadius = 8
+        greetingLabel.layer.borderWidth  = 3.0
+        greetingLabel.layer.borderColor  = UIColor.white.cgColor
         
         // Констрейнты для Label Greeting
+//        greetingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        greetingLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2).isActive = true
+//        greetingLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//        greetingLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive = true
+        
+        
         greetingLabel.translatesAutoresizingMaskIntoConstraints = false
         greetingLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-//        greetingLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        greetingLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         greetingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         greetingLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -540).isActive = true
         
-        //----------------------LABEL LOGIN-----------------------
+        //-----LABEL LOGIN-----
         
         // MARK: Label - Login
         view.addSubview(loginLabel)
         
         // Внешний вид loginLabel
-        loginLabel.text = "Введите Login"
+        loginLabel.text = "Введите логин"
         loginLabel.textColor = .white
         loginLabel.textAlignment = .left
         
@@ -58,7 +70,7 @@ class CustomViewController: UIViewController {
         loginLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         loginLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -460).isActive = true
 
-        //----------------------LOGIN TEXT FIELD-----------------
+        //-----LOGIN TEXT FIELD-----
         
         // MARK: Text Field - Enter your login
         view.addSubview(loginTextField)
@@ -66,6 +78,7 @@ class CustomViewController: UIViewController {
         loginTextField.autocapitalizationType = .words
         loginTextField.autocorrectionType = .yes
         loginTextField.clipsToBounds = true
+        loginTextField.backgroundColor = .white
         loginTextField.layer.cornerRadius = 8
         loginTextField.layer.borderWidth  = 1.5
         loginTextField.layer.borderColor  = UIColor.lightGray.cgColor
@@ -79,13 +92,13 @@ class CustomViewController: UIViewController {
         loginTextField.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         loginTextField.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -400).isActive = true
         
-        //-----------------------LABEL PASSWORD--------------
+        //-----LABEL PASSWORD-----
         
         // MARK: Label Password
         view.addSubview(passwordLabel)
         
         // Внешний вид passwordLabel
-        passwordLabel.text = "Введите Password"
+        passwordLabel.text = "Введите пароль"
         passwordLabel.textColor = .white
         passwordLabel.textAlignment = .left
         
@@ -95,7 +108,7 @@ class CustomViewController: UIViewController {
         passwordLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         passwordLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -350).isActive = true
         
-        //---------------------PASSWORD TEXT FIELD------------
+        //-----PASSWORD TEXT FIELD-----
         
         // MARK: Text Field - Password
         view.addSubview(passwordTextField)
@@ -107,7 +120,7 @@ class CustomViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 8
         passwordTextField.layer.borderWidth  = 1.5
         passwordTextField.layer.borderColor  = UIColor.lightGray.cgColor
-        passwordTextField.placeholder = "I am a PASSWORD "
+        passwordTextField.placeholder = "Enter your password"
         
         // Password Text Field Constraints
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -116,7 +129,7 @@ class CustomViewController: UIViewController {
         passwordTextField.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         passwordTextField.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -290).isActive = true
         
-        //---------------------BUTTON LOGIN---------------
+        //-----BUTTON LOGIN-----
         
         // MARK: Button Login
         view.addSubview(loginButton)

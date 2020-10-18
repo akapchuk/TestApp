@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Иницииализируем window (контейнер, в котором будет лежать весь наш UI).
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = CustomViewController()
+        window?.rootViewController = PersonalViewController()
         window?.makeKeyAndVisible()
         
         /*

@@ -10,7 +10,7 @@
 		110374D42536E4E200392992 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110374D22536E4E100392992 /* LoginPageViewController.swift */; };
 		110374D52536E4E200392992 /* LoginPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110374D32536E4E100392992 /* LoginPageViewController.xib */; };
 		110374D82536E8C200392992 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110374D72536E8C200392992 /* StartPageViewController.swift */; };
-		11205F322539E4F6005847B6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11205F312539E4F6005847B6 /* CustomButton.swift */; };
+		11205F322539E4F6005847B6 /* CustomButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11205F312539E4F6005847B6 /* CustomButtonTest.swift */; };
 		11216F452533660700C297A4 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11216F442533660700C297A4 /* LogViewController.swift */; };
 		11216F482533664100C297A4 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11216F472533664100C297A4 /* SignViewController.swift */; };
 		11401DF52537151100B87183 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11401DF32537151100B87183 /* SignUpPageViewController.swift */; };
@@ -21,6 +21,11 @@
 		11A8481C2538C72D001394C3 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A8481B2538C72D001394C3 /* CustomViewController.swift */; };
 		11B13E1F25387B34002AEDB5 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */; };
 		11B13E2025387B34002AEDB5 /* WelcomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */; };
+		11DDCBC8253C0A1A00609C73 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DDCBC7253C0A1A00609C73 /* PersonalViewController.swift */; };
+		11DDCBCB253C0AEF00609C73 /* PersonalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DDCBCA253C0AEF00609C73 /* PersonalTextField.swift */; };
+		11DDCBCF253C606E00609C73 /* PersonalGreetingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DDCBCE253C606E00609C73 /* PersonalGreetingLabel.swift */; };
+		11DDCBD3253C649100609C73 /* PersonalDescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DDCBD2253C649100609C73 /* PersonalDescriptionLabel.swift */; };
+		11DDCBD7253C6A4300609C73 /* PersonalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DDCBD6253C6A4300609C73 /* PersonalButton.swift */; };
 		11DF8C07252DA7EE002D2946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C06252DA7EE002D2946 /* AppDelegate.swift */; };
 		11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */; };
 		11DF8C0B252DA7EE002D2946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF8C0A252DA7EE002D2946 /* ViewController.swift */; };
@@ -33,7 +38,7 @@
 		110374D22536E4E100392992 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		110374D32536E4E100392992 /* LoginPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPageViewController.xib; sourceTree = "<group>"; };
 		110374D72536E8C200392992 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
-		11205F312539E4F6005847B6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		11205F312539E4F6005847B6 /* CustomButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTest.swift; sourceTree = "<group>"; };
 		11216F442533660700C297A4 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		11216F472533664100C297A4 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		11401DF32537151100B87183 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,11 @@
 		11A8481B2538C72D001394C3 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		11B13E1D25387B34002AEDB5 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		11B13E1E25387B34002AEDB5 /* WelcomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomePageViewController.xib; sourceTree = "<group>"; };
+		11DDCBC7253C0A1A00609C73 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		11DDCBCA253C0AEF00609C73 /* PersonalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTextField.swift; sourceTree = "<group>"; };
+		11DDCBCE253C606E00609C73 /* PersonalGreetingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalGreetingLabel.swift; sourceTree = "<group>"; };
+		11DDCBD2253C649100609C73 /* PersonalDescriptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDescriptionLabel.swift; sourceTree = "<group>"; };
+		11DDCBD6253C6A4300609C73 /* PersonalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalButton.swift; sourceTree = "<group>"; };
 		11DF8C03252DA7EE002D2946 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DF8C06252DA7EE002D2946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +108,18 @@
 			path = "HW View Controller (12) ";
 			sourceTree = "<group>";
 		};
+		11D7B4DE253B62E600A5582F /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				11205F312539E4F6005847B6 /* CustomButtonTest.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
 		11DF8BFA252DA7EE002D2946 = {
 			isa = PBXGroup;
 			children = (
+				11D7B4DE253B62E600A5582F /* Archive */,
 				11A848182538A8CF001394C3 /* HW Stryboards (10) */,
 				11A848162538A88D001394C3 /* HW Xib (11) */,
 				11D7B4CE2539FCF900A5582F /* HW View Controller (12)  */,
@@ -123,12 +142,16 @@
 				11DF8C06252DA7EE002D2946 /* AppDelegate.swift */,
 				11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */,
 				11DF8C0A252DA7EE002D2946 /* ViewController.swift */,
-				11205F312539E4F6005847B6 /* CustomButton.swift */,
 				11A8481B2538C72D001394C3 /* CustomViewController.swift */,
 				11DF8C0F252DA7F2002D2946 /* Assets.xcassets */,
 				11DF8C0C252DA7EE002D2946 /* Main.storyboard */,
 				11DF8C11252DA7F2002D2946 /* LaunchScreen.storyboard */,
 				11DF8C14252DA7F2002D2946 /* Info.plist */,
+				11DDCBCE253C606E00609C73 /* PersonalGreetingLabel.swift */,
+				11DDCBD2253C649100609C73 /* PersonalDescriptionLabel.swift */,
+				11DDCBCA253C0AEF00609C73 /* PersonalTextField.swift */,
+				11DDCBD6253C6A4300609C73 /* PersonalButton.swift */,
+				11DDCBC7253C0A1A00609C73 /* PersonalViewController.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -207,18 +230,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11205F322539E4F6005847B6 /* CustomButton.swift in Sources */,
+				11205F322539E4F6005847B6 /* CustomButtonTest.swift in Sources */,
 				110374D82536E8C200392992 /* StartPageViewController.swift in Sources */,
 				11DF8C0B252DA7EE002D2946 /* ViewController.swift in Sources */,
 				1151C24F25336B1C00183E00 /* GreetingViewController.swift in Sources */,
+				11DDCBD3253C649100609C73 /* PersonalDescriptionLabel.swift in Sources */,
 				11A8481C2538C72D001394C3 /* CustomViewController.swift in Sources */,
 				11DF8C07252DA7EE002D2946 /* AppDelegate.swift in Sources */,
+				11DDCBC8253C0A1A00609C73 /* PersonalViewController.swift in Sources */,
 				110374D42536E4E200392992 /* LoginPageViewController.swift in Sources */,
 				11216F482533664100C297A4 /* SignViewController.swift in Sources */,
 				117918C62534D068009115D9 /* ProfileViewController.swift in Sources */,
+				11DDCBCF253C606E00609C73 /* PersonalGreetingLabel.swift in Sources */,
 				11DF8C09252DA7EE002D2946 /* SceneDelegate.swift in Sources */,
+				11DDCBD7253C6A4300609C73 /* PersonalButton.swift in Sources */,
 				11401DF52537151100B87183 /* SignUpPageViewController.swift in Sources */,
 				11B13E1F25387B34002AEDB5 /* WelcomePageViewController.swift in Sources */,
+				11DDCBCB253C0AEF00609C73 /* PersonalTextField.swift in Sources */,
 				11216F452533660700C297A4 /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
