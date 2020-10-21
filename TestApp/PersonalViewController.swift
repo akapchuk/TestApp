@@ -6,6 +6,30 @@
 
 import UIKit
 
+
+// MARK: Homework #13
+protocol ButtonConfiguration {
+    var backgroundColor: UIColor { get set }
+    var textColor: UIColor { get set }
+    var text: String { get set }
+}
+
+struct AnotherButton: ButtonConfiguration {
+    var backgroundColor: UIColor
+    var textColor: UIColor
+    var text: String
+}
+
+func setupButton(config: ButtonConfiguration) {
+    var someButton = AnotherButton(backgroundColor: .black,
+                                   textColor: .white,
+                                   text: "Hello")
+    
+}
+
+
+
+
 class PersonalViewController: UIViewController {
     
     let greetingLabel: PersonalGreetingLabel    = PersonalGreetingLabel()
@@ -48,6 +72,7 @@ class PersonalViewController: UIViewController {
         view.addSubview(loginButton)
         loginButton.setTitle("Login", for: .normal)
         loginButtonConstraints()
+
         
     }
 

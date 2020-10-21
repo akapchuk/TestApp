@@ -111,6 +111,7 @@
 		11D7B4DE253B62E600A5582F /* Archive */ = {
 			isa = PBXGroup;
 			children = (
+				11A8481B2538C72D001394C3 /* CustomViewController.swift */,
 				11205F312539E4F6005847B6 /* CustomButtonTest.swift */,
 			);
 			path = Archive;
@@ -119,12 +120,12 @@
 		11DF8BFA252DA7EE002D2946 = {
 			isa = PBXGroup;
 			children = (
-				11D7B4DE253B62E600A5582F /* Archive */,
-				11A848182538A8CF001394C3 /* HW Stryboards (10) */,
 				11A848162538A88D001394C3 /* HW Xib (11) */,
 				11D7B4CE2539FCF900A5582F /* HW View Controller (12)  */,
 				11DF8C05252DA7EE002D2946 /* TestApp */,
 				11DF8C04252DA7EE002D2946 /* Products */,
+				11D7B4DE253B62E600A5582F /* Archive */,
+				11A848182538A8CF001394C3 /* HW Stryboards (10) */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,19 +140,18 @@
 		11DF8C05252DA7EE002D2946 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				11DF8C06252DA7EE002D2946 /* AppDelegate.swift */,
-				11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */,
-				11DF8C0A252DA7EE002D2946 /* ViewController.swift */,
-				11A8481B2538C72D001394C3 /* CustomViewController.swift */,
-				11DF8C0F252DA7F2002D2946 /* Assets.xcassets */,
-				11DF8C0C252DA7EE002D2946 /* Main.storyboard */,
-				11DF8C11252DA7F2002D2946 /* LaunchScreen.storyboard */,
-				11DF8C14252DA7F2002D2946 /* Info.plist */,
+				11DDCBC7253C0A1A00609C73 /* PersonalViewController.swift */,
 				11DDCBCE253C606E00609C73 /* PersonalGreetingLabel.swift */,
 				11DDCBD2253C649100609C73 /* PersonalDescriptionLabel.swift */,
 				11DDCBCA253C0AEF00609C73 /* PersonalTextField.swift */,
 				11DDCBD6253C6A4300609C73 /* PersonalButton.swift */,
-				11DDCBC7253C0A1A00609C73 /* PersonalViewController.swift */,
+				11DF8C06252DA7EE002D2946 /* AppDelegate.swift */,
+				11DF8C08252DA7EE002D2946 /* SceneDelegate.swift */,
+				11DF8C0A252DA7EE002D2946 /* ViewController.swift */,
+				11DF8C0F252DA7F2002D2946 /* Assets.xcassets */,
+				11DF8C0C252DA7EE002D2946 /* Main.storyboard */,
+				11DF8C11252DA7F2002D2946 /* LaunchScreen.storyboard */,
+				11DF8C14252DA7F2002D2946 /* Info.plist */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
