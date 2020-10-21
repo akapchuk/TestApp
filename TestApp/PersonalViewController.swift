@@ -21,9 +21,6 @@ struct AnotherButton: ButtonConfiguration {
 }
 
 func setupButton(config: ButtonConfiguration) {
-    var someButton = AnotherButton(backgroundColor: .black,
-                                   textColor: .white,
-                                   text: "Hello")
     
 }
 
