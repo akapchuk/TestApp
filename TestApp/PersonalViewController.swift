@@ -9,9 +9,9 @@ import UIKit
 
 // MARK: Homework #13
 protocol ButtonConfiguration {
-    var backgroundColor: UIColor { get set }
-    var textColor: UIColor { get set }
-    var text: String { get set }
+    var backgroundColor: UIColor { get }
+    var textColor: UIColor { get }
+    var text: String { get }
 }
 
 struct AnotherButton: ButtonConfiguration {
@@ -20,10 +20,17 @@ struct AnotherButton: ButtonConfiguration {
     var text: String
 }
 
+
 func setupButton(config: ButtonConfiguration) {
-    
+    let someButton = UIButton()
+    someButton.backgroundColor = config.backgroundColor
+    someButton.setTitleColor(config.textColor, for: .normal)
+    someButton.setTitle(config.text, for: .normal)
 }
 
+
+
+// let someButtom: AnotherButton = AnotherButton(backgroundColor: .red, textColor: .white, text: "Click")
 
 
 
