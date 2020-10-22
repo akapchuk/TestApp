@@ -18,19 +18,18 @@ struct AnotherButton: ButtonConfiguration {
     var backgroundColor: UIColor
     var textColor: UIColor
     var text: String
+    init(backgroundColor: UIColor, textColor: UIColor, text: String) {
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
+        self.text = text
+    }
 }
 
-
-func setupButton(config: ButtonConfiguration) {
-    let someButton = UIButton()
-    someButton.backgroundColor = config.backgroundColor
-    someButton.setTitleColor(config.textColor, for: .normal)
-    someButton.setTitle(config.text, for: .normal)
+func setupButton(config: ButtonConfiguration, button: UIButton) {
+    button.backgroundColor = config.backgroundColor
+    button.setTitleColor(config.textColor, for: .normal)
+    button.setTitle(config.text, for: .normal)
 }
-
-
-
-// let someButtom: AnotherButton = AnotherButton(backgroundColor: .red, textColor: .white, text: "Click")
 
 
 
@@ -41,7 +40,11 @@ class PersonalViewController: UIViewController {
     let loginTextField: PersonalTextField       = PersonalTextField()
     let passwordLabel: PersonalDescriptionLabel = PersonalDescriptionLabel()
     let passwordTextField: PersonalTextField    = PersonalTextField()
-    let loginButton: PersonalButton             = PersonalButton()
+    let loginButton: PersonalButton = {
+        let loginButton = PersonalButton()
+        setupButton(config: AnotherButton(backgroundColor: .red, textColor: .red, text: "s"), button: loginButton)
+        return loginButton
+    }()
     
     override func loadView() {
         super.loadView()
