@@ -9,24 +9,27 @@ import UIKit
 
 // MARK: Homework #13
 protocol ButtonConfiguration {
-    var backgroundColor: UIColor { get set }
-    var textColor: UIColor { get set }
-    var text: String { get set }
+    var backgroundColor: UIColor { get }
+    var textColor: UIColor { get }
+    var text: String { get }
 }
 
 struct AnotherButton: ButtonConfiguration {
     var backgroundColor: UIColor
     var textColor: UIColor
     var text: String
+    init(backgroundColor: UIColor, textColor: UIColor, text: String) {
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
+        self.text = text
+    }
 }
 
-func setupButton(config: ButtonConfiguration) {
-    var someButton = AnotherButton(backgroundColor: .black,
-                                   textColor: .white,
-                                   text: "Hello")
-    
+func setupButton(config: ButtonConfiguration, button: UIButton) {
+    button.backgroundColor = config.backgroundColor
+    button.setTitleColor(config.textColor, for: .normal)
+    button.setTitle(config.text, for: .normal)
 }
-
 
 
 
@@ -37,7 +40,11 @@ class PersonalViewController: UIViewController {
     let loginTextField: PersonalTextField       = PersonalTextField()
     let passwordLabel: PersonalDescriptionLabel = PersonalDescriptionLabel()
     let passwordTextField: PersonalTextField    = PersonalTextField()
-    let loginButton: PersonalButton             = PersonalButton()
+    let loginButton: PersonalButton = {
+        let loginButton = PersonalButton()
+        setupButton(config: AnotherButton(backgroundColor: .red, textColor: .red, text: "s"), button: loginButton)
+        return loginButton
+    }()
     
     override func loadView() {
         super.loadView()
