@@ -31,25 +31,42 @@ func setupButton(config: ButtonConfiguration, button: UIButton) {
     button.setTitle(config.text, for: .normal)
 }
 
+var myButton: UIButton = UIButton()
+func a(){
+    setupButton(config: AnotherButton(backgroundColor: .red, textColor: .red, text: "Hello"), button: myButton)
+}
 
 
 class PersonalViewController: UIViewController {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     let greetingLabel: PersonalGreetingLabel    = PersonalGreetingLabel()
     let loginLabel: PersonalDescriptionLabel    = PersonalDescriptionLabel()
     let loginTextField: PersonalTextField       = PersonalTextField()
     let passwordLabel: PersonalDescriptionLabel = PersonalDescriptionLabel()
     let passwordTextField: PersonalTextField    = PersonalTextField()
+    let logButton: PersonalButton = PersonalButton()
     let loginButton: PersonalButton = {
         let loginButton = PersonalButton()
-        setupButton(config: AnotherButton(backgroundColor: .red, textColor: .red, text: "s"), button: loginButton)
+        setupButton(config: AnotherButton(backgroundColor: .red, textColor: .white, text: "s"), button: loginButton)
         return loginButton
     }()
-    
+    setupButton(config: AnotherButton(backgroundColor: .red, textColor: .white, text: "s"), button: loginButton)
     override func loadView() {
         super.loadView()
         view.backgroundColor = .systemIndigo
-        
+                
         // MARK: Greeting UILabel
         view.addSubview(greetingLabel)
         greetingLabel.text = "Hello you!"
