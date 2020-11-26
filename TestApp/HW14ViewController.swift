@@ -1,7 +1,6 @@
 //
 //  HW14ViewController.swift
 //  TestApp
-//
 //  Created by Саша Капчук on 26.11.20.
 //
 
