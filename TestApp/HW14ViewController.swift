@@ -8,29 +8,82 @@ import UIKit
 
 class HW14ViewController: UIViewController {
 
-    private let button: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 52))
-        button.setTitle("Log In", for: .normal)
-        button.backgroundColor = .white
-        button.setTitleColor(.black, for: .normal)
-        return button
-    }()
+    let button = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
-        view.addSubview(button )
-        button.addTarget(self,
-                         action: #selector(didTapButton),
+        view.backgroundColor = .systemBlue
+        
+        button.setTitle("Go To Nav Controller", for: .normal)
+        view.addSubview(button)
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+        button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
+    }
+    
+    @objc private func didTapButton() {
+        let rootVC = secondVC()
+        
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
+    }
+}
+
+class secondVC: UIViewController {
+    
+    private let button = UIButton()
+    
+    private let buttonTabBar: UIButton = {
+        let buttonTabBar = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 52))
+        buttonTabBar.setTitle("Show Tab Bar menu", for: .normal)
+        buttonTabBar.backgroundColor = .yellow
+        buttonTabBar.setTitleColor(.black, for: .normal)
+        return buttonTabBar
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemRed
+        title = "Welcome"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+        
+        view.addSubview(buttonTabBar)
+        buttonTabBar.addTarget(self,
+                         action: #selector(didTapButtonTabBar),
                          for: .touchUpInside)
+        
+        button.setTitle("Push another controller", for: .normal)
+        view.addSubview(button)
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+        button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        button.center = view.center
+        buttonTabBar.center = view.center
+        
     }
-
-    @objc func didTapButton() {
+    
+    @objc private func didTapButton() {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func didTapButtonTabBar() {
         // Create and present UITabBarController
         let tabBarVC = UITabBarController()
         
@@ -70,8 +123,9 @@ class HW14ViewController: UIViewController {
         
         present(tabBarVC, animated: true)
     }
-
 }
+
+
 
 // Класс VC для каждого Tab bar
 class FirstViewController: UIViewController {
@@ -79,6 +133,15 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
         title = "Home"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -87,6 +150,15 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemIndigo
         title = "Contacts"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -95,6 +167,15 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
         title = "Help"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -103,6 +184,15 @@ class FourthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .green
         title = "About"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -111,6 +201,15 @@ class FifthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .orange
         title = "Settings"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Dismiss",
+                                                                   style: .plain,
+                                                                   target: self,
+                                                                   action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        dismiss(animated: true, completion: nil)
     }
 
 }
